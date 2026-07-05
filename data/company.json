@@ -1,0 +1,50 @@
+{
+  "company": {
+    "name": "Sam Marbles & Granites",
+    "tagline": "Premium Marbles & Granites for Elegant Living Spaces",
+    "description": "Sam Marbles & Granites is one of the leading marble and granite showrooms in Kolathur, Chennai. With over 20 years of experience, the company offers premium quality marbles, granites and other natural stones sourced from Andhra Pradesh, Rajasthan and other parts of India.",
+
+    "owner": {
+      "name": "Dr. C. M. Victor Emmanuel",
+      "designation": "Proprietor",
+      "about": "Dr. Victor Emmanuel served society as a dedicated medical doctor for many years, treating thousands of patients. Later, following his passion for business and to support his father's vision, he joined Sam Marbles & Granites. Today he personally travels across India to source premium quality marbles and granites for his customers."
+    },
+
+    "experience": "20+ Years",
+
+    "address": {
+      "line1": "No.19, Ayyappan Nagar",
+      "line2": "200 Feet Road",
+      "landmark1": "Opposite DR Furnitures",
+      "landmark2": "Near Dr. Hospital",
+      "area": "Kolathur",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600099",
+      "country": "India"
+    },
+
+    "contact": {
+      "phone": "+91 98848 52288",
+      "whatsapp": "+91 98848 52288",
+      "email": "drvictoremmanuel@yahoo.com"
+    },
+
+    "location": {
+      "googleMaps": "https://maps.app.goo.gl/YWc2SzC7CBSnqzws9"
+    },
+
+    "seo": {
+      "title": "Sam Marbles & Granites | Premium Marble & Granite Showroom in Kolathur, Chennai",
+      "description": "Premium Marbles, Granites and Natural Stones in Kolathur, Chennai. Over 20 years of trusted service.",
+      "keywords": [
+        "Marbles",
+        "Granites",
+        "Marble Shop Chennai",
+        "Granite Dealer Chennai",
+        "Kolathur Marble Shop",
+        "Premium Marble Chennai"
+      ]
+    }
+  }
+}
