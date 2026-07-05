@@ -1,0 +1,33 @@
+{
+  "events":[
+
+      {
+
+        "title":"Pongal",
+
+        "date":"2027-01-15",
+
+        "business":"closed",
+
+        "banner":true,
+
+        "theme":"pongal"
+
+      },
+
+      {
+
+        "title":"Deepavali",
+
+        "date":"2026-11-08",
+
+        "business":"closed",
+
+        "banner":true,
+
+        "theme":"deepavali"
+
+      }
+
+  ]
+}
