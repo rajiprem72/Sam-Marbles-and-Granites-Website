@@ -1,6 +1,6 @@
-# Sam Marbles & Tiles Website
+# Sam Marbles & Granites Website
 
-A modern, responsive and SEO-friendly business website developed for **Sam Marbles & Tiles**, Kolathur, Chennai.
+A modern, responsive and SEO-friendly business website developed for **Sam Marbles & Granites**, Kolathur, Chennai.
 
 This website has been created as a token of gratitude to **Dr. C. M. Victor Emmanuel**, whose timely help and support during a critical medical emergency saved my life. This project is my humble way of expressing my heartfelt thanks.
 
@@ -37,7 +37,7 @@ This website has been created as a token of gratitude to **Dr. C. M. Victor Emma
 
 ## 🏢 Business Information
 
-**Sam Marbles & Tiles**
+**Sam Marbles & Granites**
 
 No.19, Ayyappan Nagar
 200 Feet Road
@@ -56,9 +56,9 @@ Dr. C. M. Victor Emmanuel
 
 ---
 
-## 🏛 About Sam Marbles & Tiles
+## 🏛 About Sam Marbles & Granites
 
-Serving customers for over **20 years**, Sam Marbles & Tiles offers a wide collection of premium marbles, granite and designer tiles sourced from renowned suppliers across Andhra Pradesh and Rajasthan.
+Serving customers for over **20 years**, Sam Marbles & Granites offers a wide collection of premium marbles, granite and designer granites sourced from renowned suppliers across Andhra Pradesh and Rajasthan.
 
 Located on the main road in Kolathur, Chennai, the showroom is easily accessible and is situated opposite DR Furnitures and diagonally opposite DR Hospital.
 
@@ -78,7 +78,7 @@ Their services include:
 * Custom Cabinet Solutions
 * Complete Kitchen Execution
 
-Together, Sam Marbles & Tiles and Dziner's Kitchen help customers create elegant and functional living spaces under one roof.
+Together, Sam Marbles & Granites and Dziner's Kitchen help customers create elegant and functional living spaces under one roof.
 
 ---
 
@@ -123,7 +123,7 @@ The website is optimized for smartphones, tablets and desktops, ensuring an exce
 
 ## 📄 License
 
-This project has been developed exclusively for **Sam Marbles & Tiles**.
+This project has been developed exclusively for **Sam Marbles & Granites**.
 
 ---
 
@@ -133,7 +133,7 @@ This website is more than a business website—it is a heartfelt expression of g
 
 Dr. C. M. Victor Emmanuel extended timely help during one of the most difficult moments of my life. His quick action ensured I received immediate medical attention, and I remain deeply thankful.
 
-May this website contribute, in some small way, to the continued success and growth of Sam Marbles & Tiles.
+May this website contribute, in some small way, to the continued success and growth of Sam Marbles & Granites.
 
 ---
 
