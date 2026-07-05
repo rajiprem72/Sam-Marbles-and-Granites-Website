@@ -1,0 +1,999 @@
+/******************************************************************************
+Project      : Sam Marbles & Granites
+Website      : https://sam-marbles.in
+File         : base.css
+Purpose      : Global Styles, Variables, Reset & Typography
+Author       : Premanandhan Narayanan
+Architecture : Modular CSS
+
+NOTE:
+This file contains ONLY global styles used across the website.
+Do not place page-specific styles here.
+
+******************************************************************************/
+
+/*==============================================================================
+ROOT VARIABLES
+==============================================================================*/
+
+:root{
+
+    /*==============================
+      BRAND COLOURS
+    ==============================*/
+
+    --primary            : #0B2341;
+    --secondary          : #D4AF37;
+    --accent             : #2E8B57;
+
+    --white              : #FFFFFF;
+    --black              : #000000;
+
+    --light              : #F7F7F7;
+    --light-grey         : #EEEEEE;
+    --grey               : #777777;
+    --dark-grey          : #444444;
+
+    /*==============================
+      TEXT COLOURS
+    ==============================*/
+
+    --heading-color      : var(--primary);
+    --body-color         : var(--dark-grey);
+    --link-color         : var(--primary);
+
+    /*==============================
+      BUTTON COLOURS
+    ==============================*/
+
+    --btn-primary-bg     : var(--secondary);
+    --btn-primary-text   : var(--primary);
+
+    --btn-white-bg       : var(--white);
+    --btn-white-text     : var(--primary);
+
+    --btn-green-bg       : #25D366;
+    --btn-green-text     : var(--white);
+
+    /*==============================
+      SHADOWS
+    ==============================*/
+
+    --shadow-small       : 0 5px 15px rgba(0,0,0,.08);
+
+    --shadow-medium      : 0 12px 30px rgba(0,0,0,.10);
+
+    --shadow-large       : 0 20px 45px rgba(0,0,0,.15);
+
+    /*==============================
+      BORDER RADIUS
+    ==============================*/
+
+    --radius-small       : 8px;
+    --radius-medium      : 15px;
+    --radius-large       : 25px;
+    --radius-round       : 50px;
+
+    /*==============================
+      SPACING
+    ==============================*/
+
+    --section-space      : 100px;
+    --container-width    : 1200px;
+
+    /*==============================
+      TRANSITIONS
+    ==============================*/
+
+    --transition-fast    : .25s ease;
+    --transition         : .35s ease;
+    --transition-slow    : .60s ease;
+
+}
+
+
+/*==============================================================================
+CSS RESET
+==============================================================================*/
+
+*,
+*::before,
+*::after{
+
+    margin              : 0;
+    padding             : 0;
+
+    box-sizing          : border-box;
+
+}
+
+
+/*==============================================================================
+HTML
+==============================================================================*/
+
+html{
+
+    scroll-behavior     : smooth;
+
+    font-size           : 16px;
+
+}
+
+
+/*==============================================================================
+BODY
+==============================================================================*/
+
+body{
+
+    font-family         : "Poppins", sans-serif;
+
+    font-size           : 1rem;
+
+    line-height         : 1.7;
+
+    color               : var(--body-color);
+
+    background          : var(--white);
+
+    overflow-x          : hidden;
+
+    -webkit-font-smoothing : antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+/*==============================================================================
+TYPOGRAPHY
+==============================================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family         : "Playfair Display", serif;
+
+    color               : var(--heading-color);
+
+    font-weight         : 700;
+
+    line-height         : 1.20;
+
+    margin-bottom       : 20px;
+
+}
+
+h1{
+
+    font-size           : clamp(2.8rem,6vw,4.5rem);
+
+}
+
+h2{
+
+    font-size           : clamp(2rem,4vw,3rem);
+
+}
+
+h3{
+
+    font-size           : clamp(1.5rem,3vw,2rem);
+
+}
+
+h4{
+
+    font-size           : 1.4rem;
+
+}
+
+h5{
+
+    font-size           : .95rem;
+
+    text-transform      : uppercase;
+
+    letter-spacing      : 3px;
+
+    color               : var(--secondary);
+
+}
+
+h6{
+
+    font-size           : .9rem;
+
+}
+
+
+p{
+
+    margin-bottom       : 20px;
+
+}
+
+
+/*==============================================================================
+TEXT SELECTION
+==============================================================================*/
+
+::selection{
+
+    background          : var(--secondary);
+
+    color               : var(--primary);
+
+}
+
+
+/******************************************************************************
+END OF PART - 1
+
+NEXT PART
+
+Links
+Lists
+Images
+Container
+Section Spacing
+Common Layout Helpers
+
+******************************************************************************/
+/******************************************************************************
+PART 2
+
+LINKS
+LISTS
+IMAGES
+CONTAINERS
+GRID SYSTEM
+COMMON LAYOUT HELPERS
+
+******************************************************************************/
+
+/*==============================================================================
+LINKS
+==============================================================================*/
+
+a{
+
+    color               : var(--link-color);
+
+    text-decoration     : none;
+
+    transition          : var(--transition);
+
+}
+
+a:hover{
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+LISTS
+==============================================================================*/
+
+ul,
+ol{
+
+    list-style          : none;
+
+}
+
+li{
+
+    line-height         : 1.8;
+
+}
+
+
+/*==============================================================================
+IMAGES
+==============================================================================*/
+
+img{
+
+    display             : block;
+
+    max-width           : 100%;
+
+    height              : auto;
+
+    border              : none;
+
+    user-select         : none;
+
+    -webkit-user-drag   : none;
+
+}
+
+.img-fluid{
+
+    width               : 100%;
+
+    height              : auto;
+
+}
+
+.img-cover{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+}
+
+
+/*==============================================================================
+CONTAINER
+==============================================================================*/
+
+.site-container{
+
+    width               : min(var(--container-width), 92%);
+
+    margin              : 0 auto;
+
+}
+
+
+/*==============================================================================
+SECTION SPACING
+==============================================================================*/
+
+.section-padding{
+
+    padding             : var(--section-space) 0;
+
+}
+
+.section-small{
+
+    padding             : 60px 0;
+
+}
+
+.section-large{
+
+    padding             : 140px 0;
+
+}
+
+
+/*==============================================================================
+DISPLAY HELPERS
+==============================================================================*/
+
+.d-flex{
+
+    display             : flex;
+
+}
+
+.d-grid{
+
+    display             : grid;
+
+}
+
+.d-block{
+
+    display             : block;
+
+}
+
+.d-none{
+
+    display             : none;
+
+}
+
+
+/*==============================================================================
+FLEX HELPERS
+==============================================================================*/
+
+.justify-center{
+
+    justify-content     : center;
+
+}
+
+.justify-between{
+
+    justify-content     : space-between;
+
+}
+
+.align-center{
+
+    align-items         : center;
+
+}
+
+.flex-column{
+
+    flex-direction      : column;
+
+}
+
+.flex-wrap{
+
+    flex-wrap           : wrap;
+
+}
+
+
+/*==============================================================================
+GRID HELPERS
+==============================================================================*/
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:50px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+
+/*==============================================================================
+TEXT ALIGNMENT
+==============================================================================*/
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+
+/*==============================================================================
+FONT WEIGHT
+==============================================================================*/
+
+.fw-light{
+
+    font-weight:300;
+
+}
+
+.fw-normal{
+
+    font-weight:400;
+
+}
+
+.fw-medium{
+
+    font-weight:500;
+
+}
+
+.fw-semibold{
+
+    font-weight:600;
+
+}
+
+.fw-bold{
+
+    font-weight:700;
+
+}
+
+
+/*==============================================================================
+TEXT COLOURS
+==============================================================================*/
+
+.text-primary{
+
+    color:var(--primary);
+
+}
+
+.text-secondary{
+
+    color:var(--secondary);
+
+}
+
+.text-white{
+
+    color:var(--white);
+
+}
+
+.text-grey{
+
+    color:var(--grey);
+
+}
+
+
+/*==============================================================================
+BACKGROUND COLOURS
+==============================================================================*/
+
+.bg-primary{
+
+    background:var(--primary);
+
+}
+
+.bg-secondary{
+
+    background:var(--secondary);
+
+}
+
+.bg-light{
+
+    background:var(--light);
+
+}
+
+.bg-white{
+
+    background:var(--white);
+
+}
+
+
+/*==============================================================================
+BORDER RADIUS
+==============================================================================*/
+
+.radius-sm{
+
+    border-radius:var(--radius-small);
+
+}
+
+.radius-md{
+
+    border-radius:var(--radius-medium);
+
+}
+
+.radius-lg{
+
+    border-radius:var(--radius-large);
+
+}
+
+.radius-round{
+
+    border-radius:999px;
+
+}
+
+
+/*==============================================================================
+SHADOW HELPERS
+==============================================================================*/
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-small);
+
+}
+
+.shadow-md{
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-large);
+
+}
+
+
+/******************************************************************************
+END OF PART 2
+
+NEXT PART
+
+Buttons
+
+Section Headings
+
+Cards
+
+Utility Classes
+
+Glass Morphism
+
+Common Components
+
+******************************************************************************/
+/******************************************************************************
+PART 3
+
+BUTTONS
+SECTION HEADINGS
+CARDS
+UTILITY CLASSES
+
+******************************************************************************/
+
+/*==============================================================================
+BUTTONS
+==============================================================================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 32px;
+
+    border:none;
+
+    border-radius:var(--radius-round);
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    text-decoration:none;
+
+}
+
+.btn i{
+
+    font-size:18px;
+
+}
+
+.btn-primary{
+
+    background:var(--btn-primary-bg);
+
+    color:var(--btn-primary-text);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+.btn-secondary{
+
+    background:var(--btn-white-bg);
+
+    color:var(--btn-white-text);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+.btn-success{
+
+    background:var(--btn-green-bg);
+
+    color:var(--btn-green-text);
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid var(--secondary);
+
+    color:var(--secondary);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--secondary);
+
+    color:var(--primary);
+
+}
+
+
+/*==============================================================================
+SECTION HEADINGS
+==============================================================================*/
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-heading h5{
+
+    margin-bottom:12px;
+
+}
+
+.section-heading h2{
+
+    margin-bottom:18px;
+
+}
+
+.heading-line{
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--secondary);
+
+    margin:0 auto;
+
+    border-radius:50px;
+
+}
+
+.heading-line-left{
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--secondary);
+
+    margin:25px 0;
+
+    border-radius:50px;
+
+}
+
+
+/*==============================================================================
+COMMON CARD
+==============================================================================*/
+
+.card{
+
+    background:var(--white);
+
+    border-radius:var(--radius-medium);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-small);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+COMMON OVERLAY
+==============================================================================*/
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+
+/*==============================================================================
+COMMON ICON BOX
+==============================================================================*/
+
+.icon-box{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--secondary);
+
+    color:var(--primary);
+
+    font-size:30px;
+
+}
+
+
+/*==============================================================================
+VISIBILITY HELPERS
+==============================================================================*/
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.visible{
+
+    display:block !important;
+
+}
+
+
+/*==============================================================================
+POSITION HELPERS
+==============================================================================*/
+
+.position-relative{
+
+    position:relative;
+
+}
+
+.position-absolute{
+
+    position:absolute;
+
+}
+
+
+/*==============================================================================
+CURSOR HELPERS
+==============================================================================*/
+
+.pointer{
+
+    cursor:pointer;
+
+}
+
+
+/*==============================================================================
+OVERFLOW
+==============================================================================*/
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+
+/*==============================================================================
+COMMON TRANSITIONS
+==============================================================================*/
+
+.transition{
+
+    transition:var(--transition);
+
+}
+
+
+/*==============================================================================
+Z-INDEX HELPERS
+==============================================================================*/
+
+.z-1{
+
+    z-index:1;
+
+}
+
+.z-10{
+
+    z-index:10;
+
+}
+
+.z-100{
+
+    z-index:100;
+
+}
+
+.z-1000{
+
+    z-index:1000;
+
+}
+
+
+/******************************************************************************
+END OF base.css
+
+Total Approx. Lines : 350
+
+Next File
+
+header.css
+
+******************************************************************************/
