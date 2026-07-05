@@ -1,0 +1,39 @@
+{
+  "testimonials": [
+
+    {
+      "name": "Jyothyrmayi",
+      "designation": "Google Local Guide",
+      "rating": 5,
+      "photo": "images/testimonials/jyothyrmayi.jpg",
+      "review": "Reasonable price, prompt delivery, excellent service and a lot of varieties than any other showroom. Definitely recommend this place for marbles and granite."
+    },
+
+    {
+      "name": "Dr. Sunitha Govind",
+      "designation": "Google Local Guide",
+      "rating": 5,
+      "photo": "images/testimonials/sunitha.jpg",
+      "review": "Beautiful and neat collection of rare designs of marbles and granites. Designer Kitchen is also available in the same premises."
+    },
+
+    {
+      "name": "Harris RH",
+      "designation": "Google Local Guide",
+      "rating": 5,
+      "photo": "images/testimonials/harris.jpg",
+      "review": "Excellent place for modern kitchen setup and quality products."
+    },
+
+    {
+      "name": "Premanandhan Narayanan",
+      "designation": "Customer",
+      "rating": 5,
+      "photo": "images/testimonials/premanandhan.jpg",
+      "review": "I purchased marbles from Sam Marbles & Granites. Their service was excellent and delivery was prompt. I am happy to recommend them."
+    }
+
+  ],
+
+  "googleReviewLink": "https://maps.app.goo.gl/YWc2SzC7CBSnqzws9"
+}
