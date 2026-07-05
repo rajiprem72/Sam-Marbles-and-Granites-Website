@@ -1,0 +1,1659 @@
+/******************************************************************************
+Project      : Sam Marbles & Granites
+Website      : https://sam-marbles.in
+File         : footer.css
+Purpose      : Website Footer
+Section      : Footer Hero, Company Information & Social Links
+Author       : Premanandhan Narayanan
+Architecture : Modular CSS
+******************************************************************************/
+
+/*==============================================================================
+FOOTER
+==============================================================================*/
+
+.site-footer{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    color               : rgba(255,255,255,.85);
+
+    background:
+        linear-gradient(
+            rgba(7,20,40,.97),
+            rgba(4,15,30,.97)
+        ),
+        url("../images/backgrounds/footer-marble.jpg");
+
+    background-size     : cover;
+
+    background-position : center;
+
+    background-repeat   : no-repeat;
+
+}
+
+
+/*==============================================================================
+FOOTER OVERLAY
+==============================================================================*/
+
+.site-footer::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    inset               : 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.15),
+            rgba(0,0,0,.45)
+        );
+
+}
+
+
+/*==============================================================================
+FOOTER CONTAINER
+==============================================================================*/
+
+.footer-container{
+
+    position            : relative;
+
+    z-index             : 2;
+
+}
+
+
+/*==============================================================================
+FOOTER TOP
+==============================================================================*/
+
+.footer-top{
+
+    padding             : 80px 0 50px;
+
+}
+
+
+/*==============================================================================
+FOOTER GRID
+==============================================================================*/
+
+.footer-grid{
+
+    display             : grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap                 : 50px;
+
+    align-items         : start;
+
+}
+
+
+/*==============================================================================
+COMPANY SECTION
+==============================================================================*/
+
+.footer-company{
+
+    max-width           : 420px;
+
+}
+
+
+/*==============================================================================
+FOOTER LOGO
+==============================================================================*/
+
+.footer-logo{
+
+    display             : inline-flex;
+
+    align-items         : center;
+
+    gap                 : 18px;
+
+    margin-bottom       : 25px;
+
+}
+
+.footer-logo img{
+
+    width               : 70px;
+
+    height              : auto;
+
+}
+
+.footer-logo-text h2{
+
+    color               : var(--white);
+
+    margin-bottom       : 5px;
+
+    font-size           : 1.6rem;
+
+}
+
+.footer-logo-text span{
+
+    color               : var(--secondary);
+
+    font-size           : .95rem;
+
+    font-weight         : 500;
+
+}
+
+
+/*==============================================================================
+ABOUT COMPANY
+==============================================================================*/
+
+.footer-about{
+
+    margin-bottom       : 30px;
+
+    line-height         : 1.9;
+
+}
+
+
+/*==============================================================================
+SOCIAL MEDIA
+==============================================================================*/
+
+.footer-social{
+
+    display             : flex;
+
+    gap                 : 15px;
+
+    flex-wrap           : wrap;
+
+}
+
+.footer-social a{
+
+    width               : 46px;
+
+    height              : 46px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(255,255,255,.08);
+
+    color               : var(--white);
+
+    font-size           : 18px;
+
+    transition          : var(--transition);
+
+}
+
+.footer-social a:hover{
+
+    background          : var(--secondary);
+
+    color               : var(--primary);
+
+    transform           : translateY(-5px);
+
+}
+
+
+/*==============================================================================
+FOOTER COLUMN
+==============================================================================*/
+
+.footer-column h3{
+
+    color               : var(--white);
+
+    margin-bottom       : 25px;
+
+    position            : relative;
+
+    padding-bottom      : 12px;
+
+}
+
+.footer-column h3::after{
+
+    content             : "";
+
+    position            : absolute;
+
+    left                : 0;
+
+    bottom              : 0;
+
+    width               : 50px;
+
+    height              : 3px;
+
+    border-radius       : 999px;
+
+    background          : var(--secondary);
+
+}
+
+
+/******************************************************************************
+END OF PART 1
+
+NEXT PART
+
+QUICK LINKS
+
+POPULAR COLLECTIONS
+
+BUSINESS HOURS
+
+CONTACT INFORMATION
+
+******************************************************************************/
+/******************************************************************************
+PART 2
+
+QUICK LINKS
+POPULAR COLLECTIONS
+BUSINESS HOURS
+CONTACT INFORMATION
+
+******************************************************************************/
+
+/*==============================================================================
+FOOTER LINKS
+==============================================================================*/
+
+.footer-links{
+
+    list-style          : none;
+
+    margin              : 0;
+
+    padding             : 0;
+
+}
+
+.footer-links li{
+
+    margin-bottom       : 14px;
+
+}
+
+.footer-links li:last-child{
+
+    margin-bottom       : 0;
+
+}
+
+.footer-links a{
+
+    display             : inline-flex;
+
+    align-items         : center;
+
+    gap                 : 10px;
+
+    color               : rgba(255,255,255,.82);
+
+    transition          : var(--transition);
+
+}
+
+.footer-links a:hover{
+
+    color               : var(--secondary);
+
+    transform           : translateX(6px);
+
+}
+
+.footer-links a i{
+
+    color               : var(--secondary);
+
+    font-size           : .85rem;
+
+}
+
+
+/*==============================================================================
+POPULAR COLLECTIONS
+==============================================================================*/
+
+.footer-products{
+
+    list-style          : none;
+
+    margin              : 0;
+
+    padding             : 0;
+
+}
+
+.footer-products li{
+
+    margin-bottom       : 14px;
+
+}
+
+.footer-products a{
+
+    color               : rgba(255,255,255,.82);
+
+    transition          : var(--transition);
+
+}
+
+.footer-products a:hover{
+
+    color               : var(--secondary);
+
+    padding-left        : 6px;
+
+}
+
+
+/*==============================================================================
+BUSINESS HOURS
+==============================================================================*/
+
+.footer-hours{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    gap                 : 12px;
+
+}
+
+.footer-hours-row{
+
+    display             : flex;
+
+    justify-content     : space-between;
+
+    align-items         : center;
+
+    padding-bottom      : 10px;
+
+    border-bottom       : 1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-hours-row:last-child{
+
+    border-bottom       : none;
+
+}
+
+.footer-hours-day{
+
+    font-weight         : 600;
+
+    color               : var(--white);
+
+}
+
+.footer-hours-time{
+
+    color               : rgba(255,255,255,.75);
+
+}
+
+.footer-hours-row.today{
+
+    color               : var(--secondary);
+
+    font-weight         : 700;
+
+}
+
+
+/*==============================================================================
+CONTACT DETAILS
+==============================================================================*/
+
+.footer-contact{
+
+    margin-top          : 35px;
+
+}
+
+.footer-contact-item{
+
+    display             : flex;
+
+    align-items         : flex-start;
+
+    gap                 : 14px;
+
+    margin-bottom       : 18px;
+
+}
+
+.footer-contact-item:last-child{
+
+    margin-bottom       : 0;
+
+}
+
+.footer-contact-item i{
+
+    width               : 40px;
+
+    height              : 40px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(255,255,255,.08);
+
+    color               : var(--secondary);
+
+    flex-shrink         : 0;
+
+}
+
+.footer-contact-item span,
+
+.footer-contact-item a{
+
+    color               : rgba(255,255,255,.82);
+
+    transition          : var(--transition);
+
+}
+
+.footer-contact-item a:hover{
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+FOOTER DIVIDER
+==============================================================================*/
+
+.footer-divider{
+
+    height              : 1px;
+
+    margin              : 60px 0 40px;
+
+    background          : rgba(255,255,255,.10);
+
+}
+
+
+/*==============================================================================
+FOOTER HIGHLIGHTS
+==============================================================================*/
+
+.footer-highlights{
+
+    display             : grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap                 : 25px;
+
+}
+
+.footer-highlight{
+
+    text-align          : center;
+
+}
+
+.footer-highlight i{
+
+    font-size           : 32px;
+
+    color               : var(--secondary);
+
+    margin-bottom       : 15px;
+
+}
+
+.footer-highlight h4{
+
+    color               : var(--white);
+
+    margin-bottom       : 10px;
+
+}
+
+.footer-highlight p{
+
+    color               : rgba(255,255,255,.75);
+
+    margin-bottom       : 0;
+
+}
+
+
+/******************************************************************************
+END OF PART 2
+
+NEXT PART
+
+GOOGLE MAP MINI
+
+QR CODE
+
+WHATSAPP
+
+NEWSLETTER (FUTURE)
+
+FOOTER CTA
+
+******************************************************************************/
+/******************************************************************************
+PART 3
+
+MINI GOOGLE MAP
+QR CODE
+WHATSAPP
+NEWSLETTER (FUTURE)
+FOOTER CTA
+
+******************************************************************************/
+
+/*==============================================================================
+FOOTER CTA
+==============================================================================*/
+
+.footer-cta{
+
+    position            : relative;
+
+    margin-bottom       : 70px;
+
+    padding             : 45px 50px;
+
+    border-radius       : var(--radius-large);
+
+    background          : rgba(255,255,255,.05);
+
+    border              : 1px solid rgba(255,255,255,.08);
+
+    display             : flex;
+
+    justify-content     : space-between;
+
+    align-items         : center;
+
+    gap                 : 40px;
+
+}
+
+.footer-cta-content h2{
+
+    color               : var(--white);
+
+    margin-bottom       : 12px;
+
+}
+
+.footer-cta-content p{
+
+    margin              : 0;
+
+    color               : rgba(255,255,255,.80);
+
+}
+
+.footer-cta-buttons{
+
+    display             : flex;
+
+    gap                 : 18px;
+
+    flex-wrap           : wrap;
+
+}
+
+
+/*==============================================================================
+MINI MAP
+==============================================================================*/
+
+.footer-map{
+
+    margin-top          : 40px;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-medium);
+
+    box-shadow          : var(--shadow-small);
+
+}
+
+.footer-map iframe{
+
+    width               : 100%;
+
+    height              : 220px;
+
+    border              : none;
+
+}
+
+
+/*==============================================================================
+QR CODE SECTION
+==============================================================================*/
+
+.footer-qr{
+
+    margin-top          : 35px;
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 20px;
+
+}
+
+.footer-qr img{
+
+    width               : 110px;
+
+    height              : 110px;
+
+    background          : #ffffff;
+
+    padding             : 8px;
+
+    border-radius       : var(--radius-small);
+
+}
+
+.footer-qr-content h4{
+
+    color               : var(--white);
+
+    margin-bottom       : 10px;
+
+}
+
+.footer-qr-content p{
+
+    margin-bottom       : 0;
+
+    color               : rgba(255,255,255,.75);
+
+}
+
+
+/*==============================================================================
+WHATSAPP CARD
+==============================================================================*/
+
+.footer-whatsapp{
+
+    margin-top          : 35px;
+
+    padding             : 22px 25px;
+
+    border-radius       : var(--radius-medium);
+
+    background          : rgba(37,211,102,.12);
+
+    border-left         : 4px solid #25D366;
+
+}
+
+.footer-whatsapp h4{
+
+    color               : var(--white);
+
+    margin-bottom       : 10px;
+
+}
+
+.footer-whatsapp p{
+
+    margin-bottom       : 18px;
+
+    color               : rgba(255,255,255,.80);
+
+}
+
+
+/*==============================================================================
+NEWSLETTER (FUTURE)
+==============================================================================*/
+
+.footer-newsletter{
+
+    margin-top          : 35px;
+
+}
+
+.newsletter-form{
+
+    display             : flex;
+
+    gap                 : 12px;
+
+}
+
+.newsletter-form input{
+
+    flex                : 1;
+
+    padding             : 15px 18px;
+
+    border              : none;
+
+    border-radius       : var(--radius-medium);
+
+    background          : rgba(255,255,255,.10);
+
+    color               : var(--white);
+
+}
+
+.newsletter-form input::placeholder{
+
+    color               : rgba(255,255,255,.60);
+
+}
+
+.newsletter-form input:focus{
+
+    outline             : 2px solid var(--secondary);
+
+}
+
+.newsletter-form .btn{
+
+    white-space         : nowrap;
+
+}
+
+
+/*==============================================================================
+PAYMENT ICONS
+==============================================================================*/
+
+.footer-payments{
+
+    margin-top          : 35px;
+
+    display             : flex;
+
+    gap                 : 15px;
+
+    flex-wrap           : wrap;
+
+}
+
+.payment-icon{
+
+    width               : 60px;
+
+    height              : 40px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : var(--radius-small);
+
+    background          : rgba(255,255,255,.08);
+
+    transition          : var(--transition);
+
+}
+
+.payment-icon:hover{
+
+    background          : rgba(255,255,255,.18);
+
+}
+
+.payment-icon img{
+
+    max-width           : 36px;
+
+    max-height          : 24px;
+
+}
+
+
+/*==============================================================================
+CERTIFICATION BADGES
+==============================================================================*/
+
+.footer-certifications{
+
+    margin-top          : 35px;
+
+    display             : flex;
+
+    gap                 : 15px;
+
+    flex-wrap           : wrap;
+
+}
+
+.certification-badge{
+
+    padding             : 8px 16px;
+
+    border-radius       : 999px;
+
+    background          : rgba(212,175,55,.15);
+
+    color               : var(--secondary);
+
+    font-size           : .82rem;
+
+    font-weight         : 600;
+
+}
+
+
+/******************************************************************************
+END OF PART 3
+
+NEXT PART
+
+COPYRIGHT
+
+DEVELOPER CREDIT
+
+SCROLL TO TOP
+
+FLOATING BUTTONS
+
+******************************************************************************/
+/******************************************************************************
+PART 4
+
+COPYRIGHT
+DEVELOPER CREDIT
+SCROLL TO TOP
+FLOATING ACTION BUTTONS
+
+******************************************************************************/
+
+/*==============================================================================
+FOOTER BOTTOM
+==============================================================================*/
+
+.footer-bottom{
+
+    position            : relative;
+
+    z-index             : 2;
+
+    padding             : 30px 0;
+
+    border-top          : 1px solid rgba(255,255,255,.10);
+
+}
+
+
+/*==============================================================================
+BOTTOM GRID
+==============================================================================*/
+
+.footer-bottom-grid{
+
+    display             : flex;
+
+    justify-content     : space-between;
+
+    align-items         : center;
+
+    gap                 : 30px;
+
+    flex-wrap           : wrap;
+
+}
+
+
+/*==============================================================================
+COPYRIGHT
+==============================================================================*/
+
+.footer-copyright{
+
+    color               : rgba(255,255,255,.75);
+
+    font-size           : .95rem;
+
+}
+
+.footer-copyright strong{
+
+    color               : var(--white);
+
+}
+
+
+/*==============================================================================
+DEVELOPER CREDIT
+==============================================================================*/
+
+.footer-developer{
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 10px;
+
+    flex-wrap           : wrap;
+
+    color               : rgba(255,255,255,.75);
+
+    font-size           : .95rem;
+
+}
+
+.footer-developer a{
+
+    color               : var(--secondary);
+
+    font-weight         : 600;
+
+    transition          : var(--transition);
+
+}
+
+.footer-developer a:hover{
+
+    color               : var(--white);
+
+}
+
+
+/*==============================================================================
+LEGAL LINKS
+==============================================================================*/
+
+.footer-legal{
+
+    display             : flex;
+
+    gap                 : 20px;
+
+    flex-wrap           : wrap;
+
+}
+
+.footer-legal a{
+
+    color               : rgba(255,255,255,.75);
+
+    transition          : var(--transition);
+
+}
+
+.footer-legal a:hover{
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+SCROLL TO TOP
+==============================================================================*/
+
+.scroll-top{
+
+    position            : fixed;
+
+    right               : 30px;
+
+    bottom              : 30px;
+
+    width               : 58px;
+
+    height              : 58px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : var(--secondary);
+
+    color               : var(--primary);
+
+    font-size           : 22px;
+
+    box-shadow          : var(--shadow-large);
+
+    cursor              : pointer;
+
+    opacity             : 0;
+
+    visibility          : hidden;
+
+    transform           : translateY(20px);
+
+    transition          : var(--transition);
+
+    z-index             : 999;
+
+}
+
+.scroll-top.show{
+
+    opacity             : 1;
+
+    visibility          : visible;
+
+    transform           : translateY(0);
+
+}
+
+.scroll-top:hover{
+
+    transform           : translateY(-6px);
+
+}
+
+
+/*==============================================================================
+FLOATING CONTACT BUTTONS
+==============================================================================*/
+
+.floating-actions{
+
+    position            : fixed;
+
+    left                : 30px;
+
+    bottom              : 30px;
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    gap                 : 15px;
+
+    z-index             : 999;
+
+}
+
+
+/*==============================================================================
+FLOATING BUTTON
+==============================================================================*/
+
+.floating-btn{
+
+    width               : 58px;
+
+    height              : 58px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    color               : var(--white);
+
+    text-decoration     : none;
+
+    box-shadow          : var(--shadow-large);
+
+    transition          : var(--transition);
+
+}
+
+.floating-btn:hover{
+
+    transform           : translateY(-6px) scale(1.08);
+
+}
+
+
+/*==============================================================================
+BUTTON COLORS
+==============================================================================*/
+
+.floating-btn.call{
+
+    background          : #007BFF;
+
+}
+
+.floating-btn.whatsapp{
+
+    background          : #25D366;
+
+}
+
+.floating-btn.email{
+
+    background          : #D44638;
+
+}
+
+.floating-btn.maps{
+
+    background          : #EA4335;
+
+}
+
+
+/*==============================================================================
+TOOLTIP
+==============================================================================*/
+
+.floating-btn::after{
+
+    content             : attr(data-title);
+
+    position            : absolute;
+
+    left                : 70px;
+
+    white-space         : nowrap;
+
+    background          : rgba(0,0,0,.80);
+
+    color               : #ffffff;
+
+    padding             : 8px 14px;
+
+    border-radius       : 8px;
+
+    opacity             : 0;
+
+    visibility          : hidden;
+
+    transition          : var(--transition);
+
+    font-size           : .85rem;
+
+}
+
+.floating-btn:hover::after{
+
+    opacity             : 1;
+
+    visibility          : visible;
+
+}
+
+
+/******************************************************************************
+END OF PART 4
+
+NEXT PART
+
+RESPONSIVE
+
+ANIMATIONS
+
+ACCESSIBILITY
+
+PRINT
+
+******************************************************************************/
+/******************************************************************************
+PART 5
+
+RESPONSIVE DESIGN
+ANIMATIONS
+ACCESSIBILITY
+PRINT
+FINAL POLISH
+
+******************************************************************************/
+
+/*==============================================================================
+FOOTER ANIMATIONS
+==============================================================================*/
+
+.footer-animate{
+
+    opacity             : 0;
+
+    transform           : translateY(40px);
+
+    transition          :
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.footer-animate.show{
+
+    opacity             : 1;
+
+    transform           : translateY(0);
+
+}
+
+
+/*==============================================================================
+COLUMN HOVER
+==============================================================================*/
+
+.footer-column{
+
+    transition          : var(--transition);
+
+}
+
+.footer-column:hover{
+
+    transform           : translateY(-4px);
+
+}
+
+
+/*==============================================================================
+SOCIAL ICON ANIMATION
+==============================================================================*/
+
+.footer-social a{
+
+    transition          :
+        transform .35s ease,
+        background .35s ease;
+
+}
+
+.footer-social a:hover{
+
+    transform           : translateY(-6px) rotate(8deg);
+
+}
+
+
+/*==============================================================================
+FOOTER LINKS
+==============================================================================*/
+
+.footer-links a,
+.footer-products a{
+
+    position            : relative;
+
+}
+
+.footer-links a::after,
+.footer-products a::after{
+
+    content             : "";
+
+    position            : absolute;
+
+    left                : 0;
+
+    bottom              : -3px;
+
+    width               : 0;
+
+    height              : 2px;
+
+    background          : var(--secondary);
+
+    transition          : width .35s ease;
+
+}
+
+.footer-links a:hover::after,
+.footer-products a:hover::after{
+
+    width               : 100%;
+
+}
+
+
+/*==============================================================================
+FOOTER CTA
+==============================================================================*/
+
+.footer-cta{
+
+    transition          :
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.footer-cta:hover{
+
+    transform           : translateY(-5px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+TABLET
+==============================================================================*/
+
+@media(max-width:1200px){
+
+.footer-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap                 : 50px;
+
+}
+
+.footer-highlights{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-cta{
+
+    flex-direction      : column;
+
+    text-align          : center;
+
+}
+
+}
+
+
+/*==============================================================================
+TABLET SMALL
+==============================================================================*/
+
+@media(max-width:992px){
+
+.footer-bottom-grid{
+
+    flex-direction      : column;
+
+    text-align          : center;
+
+}
+
+.footer-legal{
+
+    justify-content     : center;
+
+}
+
+.footer-qr{
+
+    flex-direction      : column;
+
+    text-align          : center;
+
+}
+
+.newsletter-form{
+
+    flex-direction      : column;
+
+}
+
+.newsletter-form .btn{
+
+    width               : 100%;
+
+}
+
+}
+
+
+/*==============================================================================
+MOBILE
+==============================================================================*/
+
+@media(max-width:768px){
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+    gap                 : 45px;
+
+}
+
+.footer-highlights{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-top{
+
+    padding             : 60px 0 40px;
+
+}
+
+.footer-logo{
+
+    justify-content     : center;
+
+    text-align          : center;
+
+}
+
+.footer-company{
+
+    max-width           : 100%;
+
+    text-align          : center;
+
+}
+
+.footer-social{
+
+    justify-content     : center;
+
+}
+
+.footer-column{
+
+    text-align          : center;
+
+}
+
+.footer-column h3::after{
+
+    left                : 50%;
+
+    transform           : translateX(-50%);
+
+}
+
+.footer-contact-item{
+
+    justify-content     : center;
+
+}
+
+.footer-hours-row{
+
+    font-size           : .95rem;
+
+}
+
+.footer-cta{
+
+    padding             : 40px 25px;
+
+}
+
+.footer-cta-buttons{
+
+    flex-direction      : column;
+
+}
+
+.footer-cta-buttons .btn{
+
+    width               : 100%;
+
+}
+
+.footer-map iframe{
+
+    height              : 180px;
+
+}
+
+}
+
+
+/*==============================================================================
+SMALL MOBILE
+==============================================================================*/
+
+@media(max-width:480px){
+
+.footer-logo{
+
+    flex-direction      : column;
+
+}
+
+.footer-logo img{
+
+    width               : 60px;
+
+}
+
+.footer-logo-text h2{
+
+    font-size           : 1.35rem;
+
+}
+
+.footer-about{
+
+    font-size           : .95rem;
+
+}
+
+.footer-bottom{
+
+    font-size           : .90rem;
+
+}
+
+.scroll-top{
+
+    width               : 50px;
+
+    height              : 50px;
+
+    right               : 20px;
+
+    bottom              : 20px;
+
+}
+
+.floating-actions{
+
+    left                : 20px;
+
+    bottom              : 20px;
+
+}
+
+.floating-btn{
+
+    width               : 50px;
+
+    height              : 50px;
+
+}
+
+}
+
+
+/*==============================================================================
+ACCESSIBILITY
+==============================================================================*/
+
+.footer a:focus,
+
+.footer button:focus,
+
+.scroll-top:focus,
+
+.floating-btn:focus{
+
+    outline             : 3px solid var(--secondary);
+
+    outline-offset      : 4px;
+
+}
+
+
+/*==============================================================================
+PRINT
+==============================================================================*/
+
+@media print{
+
+.site-footer,
+
+.scroll-top,
+
+.floating-actions{
+
+    display:none !important;
+
+}
+
+}
+
+
+/******************************************************************************
+END OF footer.css
+
+Approximate Size : 850+ Lines
+
+FOOTER MODULE COMPLETED
+
+******************************************************************************/
+  
