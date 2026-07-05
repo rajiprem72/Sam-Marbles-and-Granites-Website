@@ -1,0 +1,37 @@
+{
+  "products": [
+
+    {
+      "id": 1,
+      "name": "Premium Marbles",
+      "image": "images/products/marble1.jpg",
+      "shortDescription": "Elegant imported and Indian marbles suitable for homes, villas and commercial buildings.",
+      "buttonText": "View Collection"
+    },
+
+    {
+      "id": 2,
+      "name": "Premium Granites",
+      "image": "images/products/granite1.jpg",
+      "shortDescription": "Durable premium granite collections available in multiple colours and finishes.",
+      "buttonText": "View Collection"
+    },
+
+    {
+      "id": 3,
+      "name": "Natural Stones",
+      "image": "images/products/natural-stone.jpg",
+      "shortDescription": "Natural stones carefully selected for elegant interiors and exteriors.",
+      "buttonText": "View Collection"
+    },
+
+    {
+      "id": 4,
+      "name": "Designer Tiles",
+      "image": "images/products/tile1.jpg",
+      "shortDescription": "Designer tiles for modern interiors. (Display only if available.)",
+      "buttonText": "View Collection"
+    }
+
+  ]
+}
