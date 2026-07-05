@@ -10,7 +10,11 @@
       "about": "Dr. Victor Emmanuel served society as a dedicated medical doctor for many years, treating thousands of patients. Later, following his passion for business and to support his father's vision, he joined Sam Marbles & Granites. Today he personally travels across India to source premium quality marbles and granites for his customers."
     },
 
-    "experience": "20+ Years",
+    "experience": {
+      "years": 20,
+      "started": 2005,
+      "display": "20+ Years"
+    },
 
     "address": {
       "line1": "No.19, Ayyappan Nagar",
