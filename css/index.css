@@ -1,0 +1,318 @@
+/* ==========================================================
+   SAM MARBLES & GRANITES
+   index.css
+   Theme: Blue & White
+========================================================== */
+
+:root {
+    --primary-blue: #0d6efd;
+    --secondary-blue: #0a4fb5;
+    --light-blue: #f1f7ff;
+    --dark-blue: #052c65;
+    --white: #ffffff;
+    --text-color: #444444;
+    --border-color: #d9e7ff;
+    --shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--white);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* ==========================================================
+   COMMON SECTION STYLES
+========================================================== */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-header,
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h1 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    margin: 10px 0;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.section-title h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-blue);
+}
+
+.tagline {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* ==========================================================
+   ABOUT SECTION
+========================================================== */
+
+.about-section {
+    background: var(--light-blue);
+}
+
+.highlights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.highlight-card {
+    background: var(--white);
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+}
+
+.highlight-card h3 {
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.highlight-card i {
+    color: var(--primary-blue);
+    margin-right: 10px;
+}
+
+.highlight-card p {
+    color: var(--text-color);
+}
+
+/* ==========================================================
+   SHOWROOM SECTION
+========================================================== */
+
+.showroom-section {
+    background: var(--white);
+}
+
+.showroom-section p {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* ==========================================================
+   WHY CHOOSE US
+========================================================== */
+
+.why-choose-us {
+    background: var(--light-blue);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.feature-box {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+    border-top: 4px solid var(--primary-blue);
+}
+
+.feature-box:hover {
+    transform: translateY(-6px);
+}
+
+.feature-box h4 {
+    color: var(--dark-blue);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.feature-box p {
+    color: var(--text-color);
+}
+
+/* ==========================================================
+   MISSION SECTION
+========================================================== */
+
+.mission-section {
+    background: var(--white);
+}
+
+.mission-list {
+    max-width: 900px;
+    margin: auto;
+    list-style: none;
+}
+
+.mission-list li {
+    background: var(--light-blue);
+    padding: 18px 25px;
+    margin-bottom: 18px;
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.mission-list i {
+    color: var(--primary-blue);
+    margin-right: 10px;
+}
+
+/* ==========================================================
+   CONTACT BOX
+========================================================== */
+
+.contact-box {
+    max-width: 800px;
+    margin: 50px auto 0;
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+    );
+    color: var(--white);
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.contact-box h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    margin-bottom: 25px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background: var(--white);
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+@media (max-width: 992px) {
+
+    section {
+        padding: 70px 6%;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title h3 {
+        font-size: 1.1rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .highlight-card,
+    .feature-box {
+        padding: 25px;
+    }
+
+    .contact-box {
+        padding: 40px 20px;
+    }
+
+    .contact-box h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .highlight-card h3,
+    .feature-box h4 {
+        font-size: 1.1rem;
+    }
+}
