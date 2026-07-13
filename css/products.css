@@ -1,1543 +1,272 @@
-/******************************************************************************
-Project      : Sam Marbles & Granites
-Website      : https://sam-marbles.in
-File         : products.css
-Purpose      : Product Gallery Styles
-Section      : Banner, Category Navigation & Product Grid
-Author       : Premanandhan Narayanan
-******************************************************************************/
+/* ==========================================================
+   SAM MARBLES & GRANITES
+   products.css
+   Theme : Blue & White
+========================================================== */
 
-/*==============================================================================
-PRODUCT PAGE HERO
-==============================================================================*/
-
-.products-hero{
-
-    position            : relative;
-
-    min-height          : 420px;
-
-    display             : flex;
-
-    align-items         : center;
-
-    justify-content     : center;
-
-    overflow            : hidden;
-
-    background:
-        linear-gradient(
-            rgba(11,35,65,.82),
-            rgba(11,35,65,.72)
-        ),
-        url("../images/banners/products-banner.jpg");
-
-    background-size     : cover;
-
-    background-position : center;
-
-    background-repeat   : no-repeat;
-
-}
-
-.products-hero-content{
-
-    text-align          : center;
-
-    color               : var(--white);
-
-    z-index             : 2;
-
-}
-
-.products-hero h1{
-
-    color               : var(--white);
-
-    margin-bottom       : 20px;
-
-}
-
-.products-hero p{
-
-    max-width           : 760px;
-
-    margin              : auto;
-
-    color               : rgba(255,255,255,.92);
-
-    font-size           : 1.08rem;
-
-}
-
-
-/*==============================================================================
-BREADCRUMB
-==============================================================================*/
-
-.breadcrumb{
-
-    margin-top          : 25px;
-
-    display             : flex;
-
-    justify-content     : center;
-
-    gap                 : 12px;
-
-    flex-wrap           : wrap;
-
-}
-
-.breadcrumb a{
-
-    color               : var(--secondary);
-
-}
-
-.breadcrumb span{
-
-    color               : rgba(255,255,255,.80);
-
-}
-
-
-/*==============================================================================
-PRODUCT SECTION
-==============================================================================*/
-
-.products-section{
-
-    background          : var(--light);
-
-    position            : relative;
-
-    overflow            : hidden;
-
-}
-
-
-/* Decorative Circle */
-
-.products-section::before{
-
-    content             : "";
-
-    position            : absolute;
-
-    width               : 260px;
-
-    height              : 260px;
-
-    border-radius       : 50%;
-
-    background          : rgba(212,175,55,.05);
-
-    top                 : -100px;
-
-    left                : -100px;
-
-}
-
-
-/*==============================================================================
-CATEGORY NAVIGATION
-==============================================================================*/
-
-.category-nav{
-
-    display             : flex;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-    flex-wrap           : wrap;
-
-    gap                 : 18px;
-
-    margin-bottom       : 60px;
-
-}
-
-
-/*==============================================================================
-CATEGORY BUTTON
-==============================================================================*/
-
-.category-btn{
-
-    border              : none;
-
-    background          : var(--white);
-
-    color               : var(--primary);
-
-    padding             : 14px 28px;
-
-    border-radius       : 999px;
-
-    cursor              : pointer;
-
-    font-weight         : 600;
-
-    transition          : var(--transition);
-
-    box-shadow          : var(--shadow-small);
-
-}
-
-.category-btn:hover{
-
-    background          : var(--secondary);
-
-    color               : var(--primary);
-
-    transform           : translateY(-4px);
-
-}
-
-.category-btn.active{
-
-    background          : var(--primary);
-
-    color               : var(--white);
-
-}
-
-
-/*==============================================================================
-PRODUCT GRID
-==============================================================================*/
-
-.product-grid{
-
-    display             : grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-
-    gap                 : 35px;
-
-}
-
-
-/*==============================================================================
-SECTION FOOTER
-==============================================================================*/
-
-.products-footer{
-
-    margin-top          : 70px;
-
-    text-align          : center;
-
-}
-
-
-/******************************************************************************
-END OF PART 1
-
-NEXT PART
-
-Product Card
-
-Image
-
-Overlay
-
-Badges
-
-Hover Effects
-
-******************************************************************************/
-/******************************************************************************
-PART 2
-
-PRODUCT CARD
-IMAGE
-OVERLAY
-BADGES
-HOVER EFFECTS
-
-******************************************************************************/
-
-/*==============================================================================
-PRODUCT CARD
-==============================================================================*/
-
-.product-card{
-
-    position            : relative;
-
-    background          : var(--white);
-
-    border-radius       : var(--radius-large);
-
-    overflow            : hidden;
-
-    box-shadow          : var(--shadow-small);
-
-    transition          : var(--transition);
-
-}
-
-.product-card:hover{
-
-    transform           : translateY(-12px);
-
-    box-shadow          : var(--shadow-large);
-
-}
-
-
-/*==============================================================================
-PRODUCT IMAGE
-==============================================================================*/
-
-.product-image{
-
-    position            : relative;
-
-    height              : 300px;
-
-    overflow            : hidden;
-
-}
-
-.product-image img{
-
-    width               : 100%;
-
-    height              : 100%;
-
-    object-fit          : cover;
-
-    transition          : .8s ease;
-
-}
-
-.product-card:hover .product-image img{
-
-    transform           : scale(1.10);
-
-}
-
-
-/*==============================================================================
-PRODUCT OVERLAY
-==============================================================================*/
-
-.product-overlay{
-
-    position            : absolute;
-
-    inset               : 0;
-
-    display             : flex;
-
-    flex-direction      : column;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-    gap                 : 18px;
-
-    background          : rgba(11,35,65,.75);
-
-    opacity             : 0;
-
-    transition          : var(--transition);
-
-}
-
-.product-card:hover .product-overlay{
-
-    opacity             : 1;
-
-}
-
-
-/*==============================================================================
-OVERLAY BUTTON
-==============================================================================*/
-
-.product-overlay .btn{
-
-    min-width           : 180px;
-
-}
-
-
-/*==============================================================================
-ZOOM ICON
-==============================================================================*/
-
-.zoom-icon{
-
-    width               : 65px;
-
-    height              : 65px;
-
-    border-radius       : 50%;
-
-    display             : flex;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-    background          : rgba(255,255,255,.18);
-
-    color               : var(--white);
-
-    font-size           : 24px;
-
-    backdrop-filter     : blur(10px);
-
-    -webkit-backdrop-filter:blur(10px);
-
-}
-
-.zoom-icon:hover{
-
-    background          : var(--secondary);
-
-    color               : var(--primary);
-
-}
-
-
-/*==============================================================================
-PRODUCT BADGE
-==============================================================================*/
-
-.product-badge{
-
-    position            : absolute;
-
-    top                 : 18px;
-
-    left                : 18px;
-
-    padding             : 8px 16px;
-
-    background          : var(--secondary);
-
-    color               : var(--primary);
-
-    border-radius       : 999px;
-
-    font-size           : .80rem;
-
-    font-weight         : 700;
-
-    z-index             : 5;
-
-}
-
-
-/*==============================================================================
-PRODUCT CONTENT
-==============================================================================*/
-
-.product-content{
-
-    padding             : 28px;
-
-}
-
-.product-content h3{
-
-    margin-bottom       : 14px;
-
-}
-
-.product-content p{
-
-    margin-bottom       : 20px;
-
-}
-
-
-/*==============================================================================
-PRODUCT FEATURES
-==============================================================================*/
-
-.product-features{
-
-    margin              : 20px 0;
-
-}
-
-.product-features li{
-
-    display             : flex;
-
-    align-items         : center;
-
-    gap                 : 10px;
-
-    margin-bottom       : 12px;
-
-    font-size           : .95rem;
-
-}
-
-.product-features i{
-
-    color               : var(--secondary);
-
-}
-
-
-/*==============================================================================
-PRODUCT FOOTER
-==============================================================================*/
-
-.product-footer{
-
-    display             : flex;
-
-    justify-content     : space-between;
-
-    align-items         : center;
-
-    margin-top          : 25px;
-
-}
-
-.product-price{
-
-    font-weight         : 700;
-
-    color               : var(--primary);
-
-}
-
-
-/*==============================================================================
-PRODUCT LABELS
-==============================================================================*/
-
-.product-label{
-
-    display             : inline-block;
-
-    padding             : 6px 12px;
-
-    background          : rgba(212,175,55,.12);
-
-    color               : var(--primary);
-
-    border-radius       : 999px;
-
-    font-size           : .82rem;
-
-    font-weight         : 600;
-
-    margin-right        : 8px;
-
-    margin-bottom       : 8px;
-
-}
-
-
-/******************************************************************************
-END OF PART 2
-
-NEXT PART
-
-Product Information
-
-Specifications
-
-Category Labels
-
-Call To Action
-
-******************************************************************************/
-/******************************************************************************
-PART 3
-
-PRODUCT INFORMATION
-SPECIFICATIONS
-LABELS
-PRODUCT ACTIONS
-
-******************************************************************************/
-
-/*==============================================================================
-PRODUCT INFORMATION
-==============================================================================*/
-
-.product-info{
-
-    display             : flex;
-
-    flex-direction      : column;
-
-    gap                 : 18px;
-
-}
-
-
-/*==============================================================================
-PRODUCT TITLE
-==============================================================================*/
-
-.product-title{
-
-    font-size           : 1.45rem;
-
-    color               : var(--primary);
-
-    margin-bottom       : 10px;
-
-}
-
-
-/*==============================================================================
-PRODUCT DESCRIPTION
-==============================================================================*/
-
-.product-description{
-
-    color               : var(--body-color);
-
-    line-height         : 1.8;
-
-}
-
-
-/*==============================================================================
-SPECIFICATION BOX
-==============================================================================*/
-
-.product-specifications{
-
-    background          : var(--light);
-
-    border-radius       : var(--radius-medium);
-
-    padding             : 20px;
-
-    margin-top          : 10px;
-
-}
-
-.product-specifications h4{
-
-    margin-bottom       : 18px;
-
-    color               : var(--primary);
-
-    font-size           : 1rem;
-
-}
-
-
-/*==============================================================================
-SPECIFICATION LIST
-==============================================================================*/
-
-.product-specifications ul{
-
-    margin              : 0;
-
-    padding             : 0;
-
-}
-
-.product-specifications li{
-
-    display             : flex;
-
-    align-items         : center;
-
-    gap                 : 12px;
-
-    margin-bottom       : 12px;
-
-    font-size           : .95rem;
-
-}
-
-.product-specifications li:last-child{
-
-    margin-bottom       : 0;
-
-}
-
-.product-specifications i{
-
-    color               : var(--secondary);
-
-    font-size           : 16px;
-
-}
-
-
-/*==============================================================================
-PRODUCT TAGS
-==============================================================================*/
-
-.product-tags{
-
-    display             : flex;
-
-    flex-wrap           : wrap;
-
-    gap                 : 10px;
-
-    margin-top          : 20px;
-
-}
-
-.product-tag{
-
-    padding             : 8px 14px;
-
-    border-radius       : 999px;
-
-    background          : rgba(212,175,55,.12);
-
-    color               : var(--primary);
-
-    font-size           : .82rem;
-
-    font-weight         : 600;
-
-}
-
-
-/*==============================================================================
-PRODUCT ACTION AREA
-==============================================================================*/
-
-.product-actions{
-
-    display             : flex;
-
-    gap                 : 15px;
-
-    flex-wrap           : wrap;
-
-    margin-top          : 30px;
-
-}
-
-.product-actions .btn{
-
-    flex                : 1;
-
-    min-width           : 180px;
-
-}
-
-
-/*==============================================================================
-PRODUCT HIGHLIGHTS
-==============================================================================*/
-
-.product-highlights{
-
-    display             : grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap                 : 15px;
-
-    margin-top          : 30px;
-
-}
-
-.highlight-box{
-
-    display             : flex;
-
-    align-items         : center;
-
-    gap                 : 12px;
-
-    padding             : 16px;
-
-    border-radius       : var(--radius-medium);
-
-    background          : var(--white);
-
-    box-shadow          : var(--shadow-small);
-
-}
-
-.highlight-box i{
-
-    font-size           : 22px;
-
-    color               : var(--secondary);
-
-}
-
-.highlight-box span{
-
-    font-size           : .92rem;
-
-    color               : var(--body-color);
-
-}
-
-
-/*==============================================================================
-PRODUCT AVAILABILITY
-==============================================================================*/
-
-.product-status{
-
-    display             : inline-flex;
-
-    align-items         : center;
-
-    gap                 : 8px;
-
-    margin-top          : 20px;
-
-    color               : #2E8B57;
-
-    font-weight         : 600;
-
-}
-
-.product-status i{
-
-    color               : #2E8B57;
-
-}
-
-
-/******************************************************************************
-END OF PART 3
-
-NEXT PART
-
-PRODUCT GALLERY
-
-LIGHTBOX
-
-IMAGE VIEWER
-
-THUMBNAILS
-
-******************************************************************************/
-/******************************************************************************
-PART 4
-
-LIGHTBOX
-FULL SCREEN IMAGE VIEWER
-THUMBNAIL GALLERY
-NAVIGATION BUTTONS
-
-******************************************************************************/
-
-/*==============================================================================
-LIGHTBOX
-==============================================================================*/
-
-.product-lightbox{
-
-    position            : fixed;
-
-    inset               : 0;
-
-    display             : none;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-    background          : rgba(0,0,0,.92);
-
-    z-index             : 99999;
-
-    padding             : 30px;
-
-}
-
-.product-lightbox.active{
-
-    display             : flex;
-
-}
-
-
-/*==============================================================================
-LIGHTBOX CONTENT
-==============================================================================*/
-
-.lightbox-content{
-
-    position            : relative;
-
-    max-width           : 1200px;
-
-    width               : 100%;
-
-    max-height          : 90vh;
-
-    display             : flex;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-}
-
-
-/*==============================================================================
-LIGHTBOX IMAGE
-==============================================================================*/
-
-.lightbox-image{
-
-    max-width           : 100%;
-
-    max-height          : 82vh;
-
-    border-radius       : var(--radius-large);
-
-    box-shadow          : var(--shadow-large);
-
-}
-
-
-/*==============================================================================
-CLOSE BUTTON
-==============================================================================*/
-
-.lightbox-close{
-
-    position            : absolute;
-
-    top                 : -55px;
-
-    right               : 0;
-
-    width               : 50px;
-
-    height              : 50px;
-
-    display             : flex;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-    border-radius       : 50%;
-
-    background          : rgba(255,255,255,.15);
-
-    color               : var(--white);
-
-    font-size           : 26px;
-
-    cursor              : pointer;
-
-    transition          : var(--transition);
-
-}
-
-.lightbox-close:hover{
-
-    background          : var(--secondary);
-
-    color               : var(--primary);
-
-}
-
-
-/*==============================================================================
-PREVIOUS BUTTON
-==============================================================================*/
-
-.lightbox-prev{
-
-    position            : absolute;
-
-    left                : 25px;
-
-    top                 : 50%;
-
-    transform           : translateY(-50%);
-
-}
-
-
-/*==============================================================================
-NEXT BUTTON
-==============================================================================*/
-
-.lightbox-next{
-
-    position            : absolute;
-
-    right               : 25px;
-
-    top                 : 50%;
-
-    transform           : translateY(-50%);
-
-}
-
-
-/*==============================================================================
-COMMON NAVIGATION BUTTON
-==============================================================================*/
-
-.lightbox-prev,
-.lightbox-next{
-
-    width               : 60px;
-
-    height              : 60px;
-
-    border-radius       : 50%;
-
-    display             : flex;
-
-    justify-content     : center;
-
-    align-items         : center;
-
-    background          : rgba(255,255,255,.15);
-
-    color               : var(--white);
-
-    cursor              : pointer;
-
-    transition          : var(--transition);
-
-    font-size           : 24px;
-
-}
-
-.lightbox-prev:hover,
-.lightbox-next:hover{
-
-    background          : var(--secondary);
-
-    color               : var(--primary);
-
-}
-
-
-/*==============================================================================
-IMAGE CAPTION
-==============================================================================*/
-
-.lightbox-caption{
-
-    position            : absolute;
-
-    bottom              : -70px;
-
-    left                : 50%;
-
-    transform           : translateX(-50%);
-
-    color               : var(--white);
-
-    text-align          : center;
-
-}
-
-.lightbox-caption h3{
-
-    color               : var(--white);
-
-    margin-bottom       : 8px;
-
-}
-
-.lightbox-caption p{
-
-    margin              : 0;
-
-    color               : rgba(255,255,255,.80);
-
-}
-
-
-/*==============================================================================
-THUMBNAIL STRIP
-==============================================================================*/
-
-.thumbnail-strip{
-
-    display             : flex;
-
-    justify-content     : center;
-
-    gap                 : 15px;
-
-    margin-top          : 40px;
-
-    flex-wrap           : wrap;
-
-}
-
-.thumbnail{
-
-    width               : 90px;
-
-    height              : 90px;
-
-    border-radius       : var(--radius-medium);
-
-    overflow            : hidden;
-
-    cursor              : pointer;
-
-    border              : 3px solid transparent;
-
-    transition          : var(--transition);
-
-}
-
-.thumbnail img{
-
-    width               : 100%;
-
-    height              : 100%;
-
-    object-fit          : cover;
-
-}
-
-.thumbnail:hover{
-
-    border-color        : var(--secondary);
-
-}
-
-.thumbnail.active{
-
-    border-color        : var(--secondary);
-
-}
-
-
-/*==============================================================================
-IMAGE COUNTER
-==============================================================================*/
-
-.image-counter{
-
-    position            : absolute;
-
-    top                 : -55px;
-
-    left                : 0;
-
-    color               : var(--white);
-
-    font-size           : .95rem;
-
-    background          : rgba(255,255,255,.15);
-
-    padding             : 10px 18px;
-
-    border-radius       : 999px;
-
-}
-
-
-/******************************************************************************
-END OF PART 4
-
-NEXT PART
-
-FILTER ANIMATION
-
-SKELETON LOADER
-
-RESPONSIVE
-
-PRINT
-
-ACCESSIBILITY
-
-******************************************************************************/
-/******************************************************************************
-PART 5
-
-FILTERS
-LOADING SKELETON
-EMPTY STATE
-ACCESSIBILITY
-PRINT
-RESPONSIVE HELPERS
-
-******************************************************************************/
-
-/*==============================================================================
-PRODUCT FILTER TRANSITIONS
-==============================================================================*/
-
-.product-card{
-
-    opacity             : 1;
-
-    transform           : scale(1);
-
-    transition          :
-        opacity .35s ease,
-        transform .35s ease,
-        box-shadow .35s ease;
-
-}
-
-.product-card.hide{
-
-    opacity             : 0;
-
-    transform           : scale(.95);
-
-    pointer-events      : none;
-
-}
-
-.product-card.show{
-
-    opacity             : 1;
-
-    transform           : scale(1);
-
-}
-
-
-/*==============================================================================
-LOADING SKELETON
-==============================================================================*/
-
-.product-skeleton{
-
-    background          : var(--white);
-
-    border-radius       : var(--radius-large);
-
-    overflow            : hidden;
-
-    box-shadow          : var(--shadow-small);
-
-}
-
-.skeleton-image{
-
-    height              : 280px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #eeeeee 25%,
-            #f7f7f7 50%,
-            #eeeeee 75%
-        );
-
-    background-size     : 300% 100%;
-
-    animation           : skeletonLoading 1.5s infinite;
-
-}
-
-.skeleton-content{
-
-    padding             : 25px;
-
-}
-
-.skeleton-line{
-
-    height              : 14px;
-
-    border-radius       : 10px;
-
-    margin-bottom       : 15px;
-
-    background:
-        linear-gradient(
-            90deg,
-            #eeeeee 25%,
-            #f7f7f7 50%,
-            #eeeeee 75%
-        );
-
-    background-size     : 300% 100%;
-
-    animation           : skeletonLoading 1.5s infinite;
-
-}
-
-.skeleton-line.short{
-
-    width               : 60%;
-
-}
-
-.skeleton-line.medium{
-
-    width               : 80%;
-
-}
-
-.skeleton-line.long{
-
-    width               : 100%;
-
+:root {
+    --primary-blue: #0d6efd;
+    --secondary-blue: #0a4fb5;
+    --dark-blue: #052c65;
+    --light-blue: #f3f8ff;
+    --white: #ffffff;
+    --text-color: #444444;
+    --shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
+/* ==========================================================
+   COMMON SECTION STYLES
+========================================================== */
 
-/*==============================================================================
-EMPTY PRODUCTS
-==============================================================================*/
-
-.no-products{
-
-    text-align          : center;
-
-    padding             : 80px 30px;
-
-    display             : none;
-
-}
-
-.no-products.active{
-
-    display             : block;
-
+section {
+    padding: 70px 8%;
 }
-
-.no-products i{
-
-    font-size           : 70px;
-
-    color               : var(--secondary);
 
-    margin-bottom       : 25px;
-
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
 }
-
-.no-products h3{
 
-    margin-bottom       : 20px;
-
+.section-title h2 {
+    font-size: 2.7rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
 }
-
-.no-products p{
 
-    max-width           : 600px;
-
-    margin              : auto;
-
+.section-title h3 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    font-weight: 500;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
 }
-
-
-/*==============================================================================
-ACCESSIBILITY
-==============================================================================*/
-
-.category-btn:focus,
-
-.product-overlay .btn:focus,
-
-.lightbox-close:focus,
-
-.lightbox-prev:focus,
 
-.lightbox-next:focus{
-
-    outline             : 3px solid var(--secondary);
-
-    outline-offset      : 3px;
-
+.section-description {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-color);
 }
-
-
-/*==============================================================================
-PRINT MODE
-==============================================================================*/
-
-@media print{
-
-.products-hero,
-
-.category-nav,
 
-.product-overlay,
+/* ==========================================================
+   HERO SECTION
+========================================================== */
 
-.lightbox-prev,
-
-.lightbox-next,
-
-.lightbox-close,
-
-.thumbnail-strip{
-
-    display:none !important;
-
+.products-hero {
+    background: var(--light-blue);
 }
-
-.product-grid{
 
-    grid-template-columns:repeat(2,1fr);
+/* ==========================================================
+   IMAGE GALLERY
+========================================================== */
 
+.gallery-section {
+    background: var(--white);
 }
-
-.product-card{
-
-    box-shadow:none;
 
-    border:1px solid #cccccc;
-
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
 }
-
-
-/*==============================================================================
-TABLET
-==============================================================================*/
-
-@media(max-width:992px){
 
-.product-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
+.gallery-item:hover {
+    transform: translateY(-6px);
 }
-
-.category-nav{
-
-    gap:12px;
 
+.gallery-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
 }
 
-.category-btn{
+/* ==========================================================
+   PRODUCT SECTIONS
+========================================================== */
 
-    padding:12px 22px;
-
-}
-
+.product-section {
+    background: var(--light-blue);
 }
-
-
-/*==============================================================================
-MOBILE
-==============================================================================*/
-
-@media(max-width:768px){
-
-.product-grid{
-
-    grid-template-columns:1fr;
 
+.alternate-bg {
+    background: var(--white);
 }
 
-.product-actions{
-
-    flex-direction:column;
-
+.product-card {
+    max-width: 1100px;
+    margin: auto;
+    background: var(--white);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
 }
-
-.product-actions .btn{
-
-    width:100%;
 
+.alternate-bg .product-card {
+    background: var(--light-blue);
 }
 
-.product-highlights{
-
-    grid-template-columns:1fr;
-
+.product-content h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    margin-bottom: 25px;
 }
-
-.thumbnail{
-
-    width:70px;
 
-    height:70px;
-
+.product-content p {
+    color: var(--text-color);
+    line-height: 2;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    text-align: justify;
 }
-
-.lightbox-prev,
-.lightbox-next{
-
-    width:48px;
-
-    height:48px;
 
-}
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
 
+.contact-section {
+    background: var(--white);
 }
-
-
-/*==============================================================================
-SMALL MOBILE
-==============================================================================*/
-
-@media(max-width:480px){
 
-.products-hero{
+.contact-box {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 40px;
+    border-radius: 18px;
+    text-align: center;
+    color: var(--white);
 
-    min-height:320px;
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+    );
 
+    box-shadow: var(--shadow);
 }
 
-.products-hero h1{
-
-    font-size:2rem;
-
+.contact-box h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
 }
-
-.products-hero p{
-
-    font-size:.95rem;
 
+.contact-box p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 30px;
 }
 
-.category-btn{
-
-    width:100%;
-
+.contact-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background: var(--white);
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease;
 }
 
+.contact-btn:hover {
+    background: var(--dark-blue);
+    color: var(--white);
 }
-
-
-/*==============================================================================
-SKELETON ANIMATION
-==============================================================================*/
-
-@keyframes skeletonLoading{
 
-    0%{
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
 
-        background-position:100% 0;
+@media (max-width: 992px) {
 
+    section {
+        padding: 60px 6%;
     }
 
-    100%{
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
 
-        background-position:-100% 0;
+    .product-card {
+        padding: 40px;
+    }
 
+    .gallery-item img {
+        height: 220px;
     }
 
 }
 
+@media (max-width: 768px) {
 
-/******************************************************************************
-END OF products.css
+    section {
+        padding: 50px 5%;
+    }
 
-Approximate Size : 900+ Lines
+    .section-title h2 {
+        font-size: 1.9rem;
+    }
 
-PRODUCT MODULE COMPLETED
+    .section-title h3 {
+        font-size: 1.05rem;
+    }
 
-******************************************************************************/  
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .product-card {
+        padding: 30px;
+    }
+
+    .product-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .contact-box {
+        padding: 40px 25px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-content p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.5rem;
+    }
+
+}
