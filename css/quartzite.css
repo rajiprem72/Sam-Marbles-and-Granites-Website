@@ -1,0 +1,324 @@
+/* ==========================================================
+   SAM MARBLES & GRANITES
+   quartzite.css
+   Theme: Premium Blue & White
+========================================================== */
+
+:root {
+    --primary-blue: #0d6efd;
+    --secondary-blue: #0a4fb5;
+    --dark-blue: #052c65;
+    --light-blue: #f4f8ff;
+    --white: #ffffff;
+    --text-color: #444444;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--white);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==========================================================
+   COMMON SECTION STYLES
+========================================================== */
+
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.section-title h3 {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    max-width: 900px;
+    margin: auto;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.section-description {
+    max-width: 1100px;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 1.08rem;
+    color: var(--text-color);
+    line-height: 2;
+}
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.quartzite-hero {
+    background: linear-gradient(
+        135deg,
+        var(--light-blue),
+        var(--white)
+    );
+}
+
+/* ==========================================================
+   QUARTZITE COLLECTION
+========================================================== */
+
+.quartzite-collection {
+    background: var(--white);
+}
+
+.quartzite-card {
+
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f8fbff
+    );
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: all 0.3s ease;
+}
+
+.quartzite-card:hover {
+    transform: translateY(-8px);
+}
+
+.quartzite-image {
+    width: 50%;
+}
+
+.quartzite-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.quartzite-content {
+    width: 50%;
+    padding: 50px;
+}
+
+.quartzite-content h2 {
+    font-size: 2.8rem;
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+}
+
+.quartzite-content p {
+    font-size: 1.08rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
+
+.contact-cta {
+    background: var(--light-blue);
+}
+
+.contact-box {
+
+    max-width: 900px;
+    margin: auto;
+
+    padding: 70px 50px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+    );
+
+    color: var(--white);
+
+    box-shadow: var(--shadow);
+}
+
+.contact-box h2 {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    line-height: 1.9;
+}
+
+.contact-btn {
+
+    display: inline-block;
+
+    padding: 16px 40px;
+
+    background: var(--white);
+
+    color: var(--primary-blue);
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+/* ==========================================================
+   TABLET VIEW
+========================================================== */
+
+@media (max-width: 992px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 2.4rem;
+    }
+
+    .quartzite-card {
+        flex-direction: column;
+    }
+
+    .quartzite-image,
+    .quartzite-content {
+        width: 100%;
+    }
+
+    .quartzite-image img {
+        height: 400px;
+    }
+
+    .quartzite-content {
+        padding: 40px;
+    }
+
+    .quartzite-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ==========================================================
+   MOBILE VIEW
+========================================================== */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title h3 {
+        font-size: 1.05rem;
+    }
+
+    .quartzite-image img {
+        height: 280px;
+    }
+
+    .quartzite-content {
+        padding: 25px;
+    }
+
+    .quartzite-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .quartzite-content p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .contact-box {
+        padding: 40px 25px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .section-title h2 {
+        font-size: 1.7rem;
+    }
+
+    .quartzite-image img {
+        height: 220px;
+    }
+
+    .quartzite-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
