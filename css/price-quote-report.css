@@ -1,0 +1,98 @@
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f6fb;
+}
+
+.report-section {
+
+    width: 92%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+h1 {
+
+    text-align: center;
+
+    color: #0d3b66;
+
+    margin-bottom: 40px;
+}
+
+.date-group {
+
+    margin-bottom: 40px;
+}
+
+.date-title {
+
+    background: #0d3b66;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.quote-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.quote-id {
+
+    color: #0d3b66;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+.quote-details {
+
+    display: none;
+
+    margin-top: 15px;
+
+    background: #f7f9fc;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+.quote-row {
+
+    margin: 6px 0;
+}
+
+.items-list {
+
+    margin-top: 10px;
+}
+
+.items-list li {
+
+    margin-bottom: 6px;
+}
