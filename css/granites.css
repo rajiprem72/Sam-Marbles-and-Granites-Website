@@ -124,7 +124,7 @@ section {
 .granite-card img {
     width: 45%;
     height: 320px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .granite-content {
