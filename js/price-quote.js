@@ -101,15 +101,13 @@ document
 
         } catch (error) {
 
-            console.error(error);
+    console.error(error);
 
-            alert(
+    alert(
+        "Error:\n\n" + error.message
+    );
 
-                "Something went wrong. Please try again."
-
-            );
-
-        }
+}
 
         submitButton.disabled = false;
 
