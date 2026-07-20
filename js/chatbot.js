@@ -1,6 +1,7 @@
 const CHATBOT_URL =
     "https://script.google.com/macros/s/AKfycbyKkOOZsHydc4WROm0lFIYePt7im97UtBfL-mqQOe9PNe206F5otgqa57h96hteFlsycw/exec";
 
+
 async function sendMessage() {
 
     const input =
@@ -13,28 +14,30 @@ async function sendMessage() {
 
     if (!message) return;
 
+    document.getElementById(
+        "chat-messages"
+    ).innerHTML += `
+        <p><b>You:</b> ${message}</p>
+    `;
+
+    input.value = "";
+
     const response = await fetch(
         CHATBOT_URL,
         {
             method: "POST",
+
+            mode: "no-cors",
+
             body: JSON.stringify({
-                message
+                message: message
             })
         }
     );
 
-    const data =
-        await response.json();
-
-    document
-        .getElementById(
-            "chat-messages"
-        )
-        .innerHTML += `
-
-        <p><b>You:</b> ${message}</p>
-
-        <p><b>AI:</b> ${data.reply}</p>
-
-        `;
+    document.getElementById(
+        "chat-messages"
+    ).innerHTML += `
+        <p><b>AI:</b> Thinking...</p>
+    `;
 }
